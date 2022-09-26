@@ -78,13 +78,13 @@ main {
     font-size: clamp(3px, 4vw, 1rem);
     /* b-s recebe eixo x,y,tamanho do desfoque da sombra e cor sombra */
     /* Adicionei ainda uma segunda sombra passando os params depois da ',' */
-    box-shadow: -3px 4px 0 #888, -5px 6px 0 black;
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 black;
 }
 
 .buttons {
     position: absolute;
     display: flex;
-    bottom: 10%;
+    bottom: 12%;
     right: 30%;
     width: 50%;
     height: 4%;
@@ -94,13 +94,25 @@ main {
 
 .btn {
     width: 30%;
+    height: 150%;
     border: 2px solid #333;
     border-radius: 20%;
     font-weight: 700;
     color: #30373e;
-    box-shadow: -2px 3px 0 #888, -4px 5px 0 black;
+    box-shadow: -1px 2px 0 #888, -3px 4px 0 black;
 }
 
 .btn i {
-    font-size: x-large;
+    font-size: xx-large;
+    }
+    
+    /* Estado do botão quando "active" */
+    .btn:active {
+        background-color: #444;
+        color: white;
+        box-shadow: inset -4px 4px 0 #222;
+    }
+    
+    .btn:active i {
+        font-size: x-large;
 }
