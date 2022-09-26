@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #5ab7f5, white);
+    min-height: 100vh;
+}
+
+main {
+    /* Possibilita ocupar a tela inteira, mas limita ao tamanho ocupado pela linha atual */
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon {
+    position: absolute;
+    top: 38%;
+    left: 45%;
+    width: 35%;
+    /* Transform vai manipular a posição da imagem em relação ao tamanho da imagem */
+    transform: translate(-50%, -50%);
+}
+
+.pokemon-data {
+    position: absolute;
+    font-weight: 700;
+    color: black;
+    top: 55%;
+    right: 30%;
+    /* Clamp vai receber valor min, desejável e max pra tornar a fonte responsiva*/
+    font-size: clamp(8px, 5vw, 25px)
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+}
+
+#search {
+    position: absolute;
+    width: 71%;
+    bottom: 30%;
+    left: 15%;
+}
+
+#search i {
+    position: inherit;
+    font-size: 220%;
+    color: #E3E3E3;
+    border: 2px solid #333;
+    border-radius: .4rem;
+    left: -4%;
+    top: 2.5%;
+    box-shadow: 1px 2px 0 #888, 2px 4px 0 black;
+}
+
+.poke-input {
+    width: 80%;
+    padding: 2%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: .4rem;
+    font-weight: 700;
+    color: #30373e;
+    font-size: clamp(3px, 4vw, 1rem);
+    /* b-s recebe eixo x,y,tamanho do desfoque da sombra e cor sombra */
+    /* Adicionei ainda uma segunda sombra passando os params depois da ',' */
+    box-shadow: -3px 4px 0 #888, -5px 6px 0 black;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    right: 30%;
+    width: 50%;
+    height: 4%;
+    gap: 20px;
+    transform: translate(20%, 0);
+}
+
+.btn {
+    width: 30%;
+    border: 2px solid #333;
+    border-radius: 20%;
+    font-weight: 700;
+    color: #30373e;
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 black;
+}
+
+.btn i {
+    font-size: x-large;
+}
