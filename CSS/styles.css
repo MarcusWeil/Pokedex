@@ -36,17 +36,31 @@ main {
     width: 100%;
     max-width: 425px;
 }
+.notFound {
+    font-size: 18pt;
+}
 
-.pokemon {
+#pokemon {
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 45%;
     width: 30%;
+    height: 15%;
+    /* Transform vai manipular a posição da imagem em relação ao tamanho da imagem */
+    transform: translate(-50%, -50%);
+}
+    
+.silhouetteImg {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 30%;
+    height: 25%;
     /* Transform vai manipular a posição da imagem em relação ao tamanho da imagem */
     transform: translate(-50%, -50%);
 }
 
-.pokemon-data {
+#pokemon-data {
     position: absolute;
     font-weight: 700;
     color: black;
@@ -79,6 +93,23 @@ main {
     box-shadow: 1px 2px 0 #888, 2px 4px 0 black;
 }
 
+#loading {
+    position: absolute;
+    text-align: center;
+    top: 48%;
+    left: 5%;
+}
+
+#loading h1 {
+    font-size: clamp(8px, 5vw, 25px);
+    transform: translate(0, 40%);
+}
+
+#loading h1 img {
+    width: 15%;
+    height: 100%;
+    transform: translate(0, 20%);
+}
 .poke-input {
     width: 80%;
     padding: 2%;

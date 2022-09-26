@@ -18,13 +18,17 @@
 
 <body>
     <main>
-        <img src="" alt="" class="pokemon">
-        <h1 class="pokemon-data">
+        <img src="" id="pokemon" class="hide">
+        <img src="" class="silhouetteImg hide">
+        <div id="loading" class="hide">
+            <h1>Buscando... <img src="./assets/pikachu.gif"></h1>
+        
+        </div>
+        <h1 id="pokemon-data" class="hide">
             <span class="pokemon-number"></span>
-            <span>-</span>
+            <span class="space">-</span>
             <span class="pokemon-name"></span>
         </h1>
-        <span id="notFound" class="hide">Pokémon não encontrado</span>
 
         <form id="search">
             <i class="fa-solid fa-passport"></i>
