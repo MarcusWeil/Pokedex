@@ -54,8 +54,8 @@ main {
     position: absolute;
     top: 40%;
     left: 45%;
-    width: 30%;
-    height: 25%;
+    width: 35%;
+        height: 30%;
     /* Transform vai manipular a posição da imagem em relação ao tamanho da imagem */
     transform: translate(-50%, -50%);
 }
@@ -84,7 +84,7 @@ main {
 #search i {
     cursor: pointer;
     position: inherit;
-    font-size: 220%;
+    font-size: 190%;
     color: #E3E3E3;
     border: 2px solid #333;
     border-radius: .4rem;
@@ -146,6 +146,7 @@ main {
         background-color: #444;
         box-shadow: -2px 3px 0 #222, -4px 6px 0 black;
 }
+
 
 .btn i {
     font-size: xx-large;
