@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/93293231/192816282-3c72ba38-78ac-4ad3-
 
 
 ### Qual é este pokémon?
-Ao pesquisar por um pokémon ainda não identificado pela pokedex, será apresentado a mensagem não de não encontrado e uma silhueta de algum dos pokémons cadastrados.
+Ao pesquisar por um pokémon ainda não identificado pela pokedex, será apresentado a mensagem de não encontrado e uma silhueta de algum dos pokémons cadastrados.
 
 https://user-images.githubusercontent.com/93293231/192817003-5d92999c-ae3b-4e00-9a94-ec6de23f48fc.mp4
 
